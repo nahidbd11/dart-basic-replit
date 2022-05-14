@@ -1,4 +1,5 @@
 void main() {
 	print('Hello World!');
-  String n=3;
+  String name="Nahid";
+  print("hi this is $name");
 }
