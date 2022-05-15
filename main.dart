@@ -1,4 +1,26 @@
 
+/******
+final is initialized when it is accessed;
+if we dont use final variable it will not initialized
+
+
+const is initialized when it is compile;
+no matter we use the variable or not;
+
+var i=5; var initialzed type of variable i as int on compile time automatic. so we cant assign string in i variable; like i="nahid" will throw an error;
+
+int? i; this means int i=null; this is nullable variable. it's default value is null or it's value can be changed;
+
+int i; it is non-nullable variable and it should be defined before it is used;
+
+late int i; without defined or initialzed it and assign value of i later.lazy initialization;
+
+
+int? a;
+a??=6; // output a=6; same as js nullis coallesing operator a=a??6;
+*******/
+
+
 void main() {
   String nonnullable;
 //   print(nonnullable);
@@ -15,6 +37,16 @@ void main() {
   const w=const Wife("shapla");
   print(w.name);
   // w.name="name cant be changed as class is const";
+
+
+ late int i;
+   i=5; //the value of i initialize later lazy initialization;
+  print(i);
+
+  int? a;
+  a??=10; // this is same as a=a??10; if the value left side is null then show default value of right side ;same as nulliscoallesign operator in js;
+  print(a);//output is 10
+
 }
 
 
