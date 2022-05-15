@@ -47,6 +47,11 @@ void main() {
   a??=10; // this is same as a=a??10; if the value left side is null then show default value of right side ;same as nulliscoallesign operator in js;
   print(a);//output is 10
 
+  final v; //type of v is dynamic
+  final int x;//type of x is fixed;
+  v=5; // now the value of v is fixed
+  print(v);
+
 }
 
 
